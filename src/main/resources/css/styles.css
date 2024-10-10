@@ -1,0 +1,60 @@
+.left-section {
+    -fx-background-color: #ffcc00;
+    -fx-padding: 10;
+    -fx-border-color: #ff9900;
+    -fx-border-width: 2;
+}
+
+.right-section {
+    -fx-background-color: #33cc33;
+    -fx-padding: 10;
+    -fx-border-color: #009900;
+    -fx-border-width: 2;
+}
+
+.image-label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+}
+
+.action-button {
+    -fx-background-color: #ff3366;
+    -fx-text-fill: white;
+    -fx-padding: 5 10;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Comic Sans MS';
+    -fx-effect: dropshadow(three-dimensional, rgba(0,0,0,0.4), 5, 0.0, 1, 1);
+}
+
+.table-view {
+    -fx-border-color: #000000;
+    -fx-border-width: 2;
+    -fx-background-color: #f0e68c;
+}
+
+.table-view .column-header {
+    -fx-background-color: #ff9933;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.action-button:hover {
+    -fx-background-color: #ff6699;
+    -fx-text-fill: black;
+}
+
+.table-view .table-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #ffcc00;
+    -fx-text-fill: black;
+}

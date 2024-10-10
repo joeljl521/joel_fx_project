@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.Color?>
+<AnchorPane
+        xmlns:fx="http://javafx.com/fxml/1" fx:controller="joel.joel_fx_project.MainController">
+  <children>
+    <VBox alignment="CENTER" prefWidth="150" prefHeight="400" styleClass="left-section">
+      <ImageView fx:id="userImage" fitHeight="100" fitWidth="100" />
+      <Label text="User Image" styleClass="image-label" />
+    </VBox>
+    <TableView fx:id="tableView" layoutX="150" layoutY="10" prefWidth="400" prefHeight="400">
+      <columns>
+        <TableColumn fx:id="idColumn" text="ID" />
+        <TableColumn fx:id="firstNameColumn" text="First Name" />
+        <TableColumn fx:id="lastNameColumn" text="Last Name" />
+        <TableColumn fx:id="departmentColumn" text="Department" />
+        <TableColumn fx:id="majorColumn" text="Major" />
+        <TableColumn fx:id="emailColumn" text="Email" />
+      </columns>
+    </TableView>
+    <VBox alignment="TOP_CENTER" layoutX="560" prefWidth="250" prefHeight="400" styleClass="right-section">
+      <TextField fx:id="lastNameField" promptText="Last Name" />
+      <TextField fx:id="departmentField" promptText="Department" />
+      <TextField fx:id="majorField" promptText="Major" />
+      <TextField fx:id="emailField" promptText="Email" />
+      <TextField fx:id="imageURLField" promptText="Image URL" />
+      <VBox spacing="10" alignment="CENTER">
+        <Button fx:id="clearButton" text="Clear" styleClass="action-button" />
+        <Button fx:id="addButton" text="Add" styleClass="action-button" />
+        <Button fx:id="deleteButton" text="Delete" styleClass="action-button" />
+        <Button fx:id="editButton" text="Edit" styleClass="action-button" />
+      </VBox>
+    </VBox>
+  </children>
+</AnchorPane>
